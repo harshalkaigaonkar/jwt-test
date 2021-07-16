@@ -2,7 +2,7 @@ const express = require('express');
 const uuid = require('uuid');
 const jwt = require('jsonwebtoken');
 const app = express();
-const secret = 'Any thing giberish...'
+const secret = uuid.v4();
 let jwtoken = undefined;
 const payload = {
     user: {
